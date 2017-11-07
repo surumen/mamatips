@@ -1,128 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="I am a software engineer, and a social entrepreneur.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Moses Surumen</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="stylesheets/grey-pink.css" />
-    <!-- <link rel="stylesheet" href="css/site.css" /> -->
-    <link rel="stylesheet" href="stylesheets/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,500i,700,700i,900,400i"/>
-
-    <script>
-       WebFontConfig = {
-          typekit: { id: 'xxxxxx' }
-       };
-
-       (function(d) {
-          var wf = d.createElement('script'), s = d.scripts[0];
-          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
-          s.parentNode.insertBefore(wf, s);
-       })(document);
-    </script>
+<head><title>MamaTips | About Us</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,600,400,300,200">
+    <link type="text/css" rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="libs/ionicons/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="vendors/medical-icons/style.css">
+    <link type="text/css" rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="libs/animate.css/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/core.css">
+    <link type="text/css" rel="stylesheet" href="css/layout.css">
+    <link type="text/css" rel="stylesheet" href="css/vendor.css">
+    <link type="text/css" rel="stylesheet" href="css/pages/index.css">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 </head>
-
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row" style="background: #66FFB0; background: -webkit-linear-gradient(to right, #00CAFF, #FF43AD); background: -moz-linear-gradient(to right, #00CAFF, #FF43AD); background: linear-gradient(to right, #00CAFF, #FF43AD);">
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                    <span class="mdl-layout__title">Software Engineer | Social Entrepreneur | Graphic Designer</span>
-                </span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only" style="background-image: url(data:image/png;base64,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); background-color: #f4f4f4;">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link" href="/" style="color: #020202;">Portfolio</a>
-                    <a class="mdl-navigation__link" href="/blog" style="color: #db0425;">Blog</a>
-                    <a class="mdl-navigation__link is-active" href="/about" style="color: #00a040;">About</a>
-                    <a class="mdl-navigation__link" href="/contact" style="color: #0086ca;">Contact</a>
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="/">Portfolio</a>
-                <a class="mdl-navigation__link" href="/blog">Blog</a>
-                <a class="mdl-navigation__link" href="/about">About</a>
-                <a class="mdl-navigation__link" href="/contact">Contact</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content" style="background: #ffffff; background: -webkit-linear-gradient(to right, #f7f7f7, #d7e6fd); background: -moz-linear-gradient(to right, #f7f7f7, #d7e6fd); background: linear-gradient(to right, #f7f7f7, #d7e6fd);">
-            <div class="mdl-grid portfolio-max-width">
-
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">About</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <img class="article-image" src="images/about-header.jpg" border="0" alt="">
-                    </div>
-
-                    <div class="mdl-grid portfolio-copy">
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Education</h3>
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                I am a junior at the University of California, Berkeley studying Electrical Engineering and Computer Science. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. <p style="font-style: italic;">Coursework</p>
-                                <p>Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.</p>
-                                <img src="images/cal.png" style="padding-left: 50%;">
-                            </p>
-                        </div>
-
-
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Work</h3>
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p style="font-style: italic;">Equity Bank Kenya</p>
-                                <p>Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.</p>
-                                <img class="mdl-cell mdl-cell--6-col" src="images/cal.png" style="align-content: left;">
-                            </p>
-                            <p style="font-style: italic;">M-Soma Institute (Founder)</p>
-                                <p>Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.</p>
-                                <img class="mdl-cell mdl-cell--6-col" src="images/cal.png" style="align-content: left;">
-                            </p>
-                        </div>
-
-
-
-
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Awards</h3>
-
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                <p style="font-style: italic;">MasterCardFoundation Scholar.</p>
-                                <p>Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.</p>
-
-                                <p style="font-style: italic;">Resolution Fellow.</p>
-                                <p>Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.</p>
-
-                                <p style="font-style: italic;">Equity Leaders Program Scholar.</p>
-                                <p>Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.</p>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">© 2017 Moses Surumen</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Privacy & Terms</a></li>
+<!-- BACK TO TOP-->
+<a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+<!-- WRAPPER-->
+<div id="wrapper">
+    <!-- HEADER-->
+    <header class="header-wrapper" style="background-color: #7F00FF">
+        <div id="header" style="background-color: #7F00FF">
+            <div class="container" style="background-color: #7F00FF">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" class="img-responsive"/></a></div>
+                <nav class="menu">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="index.html#top" class="btn btn-success btn-14" style="background-color: #ff69b4">Home</a></li>
+                        <li><a href="index.html#what-we-do" class="btn btn-success btn-14" style="background-color: #ff69b4">What We Do</a></li>
+                        <li><a href="about.html" class="btn btn-success btn-14" style="background-color: #ff69b4">About Us</a></li>
+                        <li><a href="contact.html" class="btn btn-success btn-14" style="background-color: #ff69b4">Contact Us</a></li>
                     </ul>
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
+                </nav>
+                <div class="menu-responsive"><span class="fa fa-bars"></span></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header >
+    <!-- MAIN-->
+    <div id="main">
+    <!-- CONTENT-->
+        <div id="content">
+        <!--******************************************ABOUT US******************************************-->
+            <div id="how-it-began">
+                <div id="section-features" class="section">
+                    <div class="container text-center">
+                        <div class="section-heading">
+                            <div class="info" style="color: #7F00FF;font-size:30px">Our Story</div>
+                            <div class="line"></div>
+                        </div>
+                        <p class="info" style="color: #7F00FF">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                        <!--*****************************************THE TEAM*****************************************-->
+                        <div class="section-heading">
+                            <div class="info" style="color: #7F00FF;font-size:30px;margin-top: 10px !important;"> MamaTips Team Profile</div>
+                            <div class="line"></div>
+                        </div>
+                         <div class="team">
+                            <div class="container"> 
+                                <div class="row" style="margin-top: 15px !important;">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                        <h3 class="info" style="color: #7F00FF;text-align: right;">Laurene Amoit</h3>
+                                        <p class="info" style="color: #7F00FF;text-align: right;">Social Entrepreneurship and Economics</p>
+                                        <p class="info" style="color: #7F00FF;text-align: right;">Published writer and photographer. Peter strives to unite various artistic mediums to inspire and bring about change, and oversees the actualization of our mission and vision. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 15px !important;">
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                        <h3 class="info" style="color: #7F00FF;text-align: left;">Gloria Nyanja</h3>
+                                        <p class="info" style="color: #7F00FF;text-align: left;">Public Health</p>
+                                        <p class="info" style="color: #7F00FF;text-align: left;">Published writer and photographer. Peter strives to unite various artistic mediums to inspire and bring about change, and oversees the actualization of our mission and vision. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 15px !important;">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                        <h3 class="info" style="color: #7F00FF;text-align: right;">Fanice Mangoja</h3>
+                                        <p class="info" style="color: #7F00FF;text-align: right;">BioEngineering</p>
+                                        <p class="info" style="color: #7F00FF;text-align: right;">Published writer and photographer. Peter strives to unite various artistic mediums to inspire and bring about change, and oversees the actualization of our mission and vision. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 15px !important;">
+                                    <div class="col-md-9 col-sm-9 col-xs-12 animate_left">
+                                        <h3 class="info" style="color: #7F00FF;text-align: left;">Dr. Mary Adams</h3>
+                                        <p class="info" style="color: #7F00FF;text-align: left;">Pediatric Surgeon</p>
+                                        <p class="info" style="color: #7F00FF;text-align: left;">Published writer and photographer. Peter strives to unite various artistic mediums to inspire and bring about change, and oversees the actualization of our mission and vision. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 15px !important;">
+                                    <div class="col-md-3 col-sm-3 col-xs-12">
+                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
+                                        </div>
+                                    </div>
+                                    <div id="left" class="col-md-9 col-sm-9 col-xs-12">
+                                        <h3 class="info" style="color: #7F00FF;text-align: right;">Duncan Inganji</h3>
+                                        <p class="info" style="color: #7F00FF;text-align: right;">Computer Science & Electrical Engineering</p>
+                                        <p class="info" style="color: #7F00FF;text-align: right;">Published writer and photographer. Peter strives to unite various artistic mediums to inspire and bring about change, and oversees the actualization of our mission and vision. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                        
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div id="meet-the-team">
+                            <div><img src="images/placeholder.jpg" alt="" class="img-responsive"/></div>
+                            <div id="section-meet-our-doctor" class="section">
+                            <div class="container text-center">
+                                <div class="section-heading">
+                                    <div class="title" style="color: #7F00FF">Kijabe Maternal Newborn Community Health Clinic</div>
+                                    <div class="line"></div>
+                                    <div class="sub-title mbxxl" style="color: #7F00FF">The Kijabe Maternal Newborn Community Health Clinic team is a unique and complementary combination of age, skill and experience.</div>
+                                </div>
+                                <div class="section-content">
+                                    <div id="doctor-carousel" data-ride="carousel" class="carousel slide">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="row man">
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
 
+                                                            <div class="caption">
+                                                                <div class="name"><a href="our_team_profile.html" style="color: #7F00FF">Joram Ndung'u</a></div>
+                                                                <div class="pos" style="color: #7F00FF">Community Health Development</div>
+                                                            </div>
+                                                            <!--<div class="social"><a href="#" class="icons"><i class="fa fa-facebook"></i></a><a href="#" class="icons"><i class="fa fa-twitter"></i></a><a href="#" class="icons"><i class="fa fa-google-plus"></i></a><a href="#" class="icons"><i class="fa fa-skype"></i></a></div>-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="thumb"><img src="images/doctors/doc_2.jpg" alt="" class="img-responsive"/>
+
+                                                            <div class="caption">
+                                                                <div class="name"><a href="our_team_profile.html" style="color: #7F00FF">Carolyn Waithera</a></div>
+                                                                <div class="pos" style="color: #7F00FF">Public and Community Health</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="thumb"><img src="images/doctors/doc_4.jpg" alt="" class="img-responsive"/>
+
+                                                            <div class="caption">
+                                                                <div class="name"><a href="our_team_profile.html" style="color: #7F00FF">Dr Maureen S. McAlhaney</a></div>
+                                                                <div class="pos" style="color: #7F00FF">General Surgery and Community Health</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="row man">
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="thumb"><img src="images/doctors/doc_1.jpg" alt="" class="img-responsive"/>
+
+                                                            <div class="caption">
+                                                                <div class="name"><a href="our_team_profile.html" style="color: #7F00FF">Thomas Renner</a></div>
+                                                                <div class="pos" style="color: #7F00FF">Leadership Development and Community Networking</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="thumb"><img src="images/doctors/doc_2.jpg" alt="" class="img-responsive"/>
+
+                                                            <div class="caption">
+                                                                <div class="name"><a href="our_team_profile.html" style="color: #7F00FF">Dorothy Renner</a></div>
+                                                                <div class="pos" style="color: #7F00FF">Agriculture and Community Development</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                                        <div class="thumb"><img src="images/doctors/doc_3.jpg" alt="" class="img-responsive"/>
+
+                                                            <div class="caption">
+                                                                <div class="name"><a href="our_team_profile.html" style="color: #7F00FF">Simon Mbugua</a></div>
+                                                                <div class="pos" style="color: #7F00FF">Health Systems and Community Health</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#doctor-carousel" data-slide="prev" class="left carousel-control"><span class="fa fa-arrow-left"></span></a><a href="#doctor-carousel" data-slide="next" class="right carousel-control"><span class="fa fa-arrow-right"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- FOOTER-->
+    <div id="footer">
+        <div id="section-footer" class="section">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-6 prl col-sm-6">
+                            <div class="logo"><a href="#"><img src="images/logo.png" alt="" class="img-responsive"/></a></div>
+                            <div class="about-us">At MamaTips we are open to new innovative ways of improving maternal and pediatric healthcare and so we love to hear feedback from you</div>
+                            <div class="contact-info">
+                                <ul class="list-unstyled mbn">
+                                    <li><a href="https://login.skype.com/login?client_id=360605&redirect_uri=https%3A%2F%2Fsecure.skype.com%2Fportal%2Flogin&message=logged_out&lc=1033"><i class="fa fa-phone fa-fw"></i>+254-718-734180</a></li>
+                                    <li><a href="contact.html"><i class="fa fa-envelope fa-fw"></i>enquiries@mamatips.org</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pll prl col-sm-6">
+                            <div class="recent-twitter">
+                                <div class="heading"><i class="fa fa-twitter"></i>Recent Tweets</div>
+                                <div class="content">
+                                    <nav class="list-recent-twitter">
+                                        <ul class="list-unstyled mbn">
+                                            <li><a href="#"><strong class="mrs">@fanice_mangoja:</strong><span>MamaTips is an amazing implementation of our country's vision 2030 in healthcare</span>
+
+                                                <p class="mts">
+                                                    <small>2 hours ago</small>
+                                                </p>
+                                            </a></li>
+                                            <li><a href="#"><strong class="mrs">@gloria_nyanja:</strong><span>This is what Kenyans have been waiting for, I am so excited that this is finally coming to life</span>
+
+                                                <p class="mts">
+                                                    <small>4 hours ago</small>
+                                                </p>
+                                            </a></li>
+                                            <li><a href="#"><strong class="mrs">@laurene_amoit:</strong><span>It's time we as youth put our brains to work and started solving our country's problems, I love that we now can and are doing this.</span>
+
+                                                <p class="mts mbn">
+                                                    <small>7 hours ago</small>
+                                                </p>
+                                            </a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section-copyright">
+            <div class="container"><p class="text-center mbn" style="color:#7F00FF">© 2016 MamaTips. All Rights Reserved</p></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/layout.js"></script>
+<!--LOADING SCRIPTS FOR PAGE--><!--CORE JAVASCRIPT-->
+<script src="js/main.js"></script>
+<script src="js/layout.js"></script>
+<script src="about_us.js"></script>
+</body>
 </html>
